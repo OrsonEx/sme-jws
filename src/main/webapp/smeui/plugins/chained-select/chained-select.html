@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+<meta charset="utf-8">
+<script type="text/javascript" src="../jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="jquery.chained.min.js"></script>
+<script type="text/javascript">  
+    $(document).ready(function() {  
+        $("#series").chained("#mark"); /* or $("#series").chainedTo("#mark"); */  
+        $("#model").chained("#series");  
+    });  
+</script> 
+ </HEAD>
+ <body>
+ 
+<select id="mark" name="mark">  
+        <option value="">--</option>  
+        <option value="bmw">BMW</option>  
+        <option value="audi">Audi</option>  
+    </select>  
+    <select id="series" name="series">  
+        <option value="">--</option>  
+        <option value="series-3" class="bmw">3 series</option>  
+        <option value="series-5" class="bmw">5 series</option>  
+        <option value="series-6" class="bmw">6 series</option>  
+        <option value="a3" class="audi">A3</option>  
+        <option value="a4" class="audi">A4</option>  
+        <option value="a5" class="audi">A5</option>  
+    </select>  
+    <select id="model" name="model">  
+        <option value="">--</option>  
+        <option value="coupe" class="series-3 series-6 a5">Coupe</option>  
+        <option value="cabrio" class="series-3 series-6 a3 a5">Cabrio</option>  
+        <option value="sedan" class="series-3 series-5 a3 a4">Sedan</option>  
+        <option value="sportback" class="a3 a5">Sportback</option>  
+    </select>  
+</body>
+</HTML>
