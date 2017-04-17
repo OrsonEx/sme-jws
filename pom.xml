@@ -85,7 +85,7 @@
                         <contextPath>/${project.name}</contextPath>
                     </webApp>
                     <httpConnector>
-                        <port>4040</port>
+                        <port>404</port>
                     </httpConnector>
                     <stopKey>foo</stopKey>
                     <stopPort>9998</stopPort>
