@@ -10,7 +10,7 @@ import javax.jws.soap.SOAPBinding;
  */
 @WebService
 @SOAPBinding(style = SOAPBinding.Style.RPC)
-public interface MyFirstWebService {
+public interface UserService {
 
     /**
      * 执行测试的WebService方法(有参)
